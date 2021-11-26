@@ -4,7 +4,7 @@
 set -e
 
 # 生成静态文件
-npm run build
+yarn build
 
 # 进入生成的文件夹
 cd docs/.vuepress/dist
@@ -24,7 +24,7 @@ cd docs/.vuepress/dist
 githubUrl=https://github.com/zhf883680/JiangSuTest.git
 git init
 git add -A
-git commit -m "${msg}"
+git commit -m "deploy"
 git push -f $githubUrl master:gh-pages # 推送到github gh-pages分支
 
 # deploy to coding pages
@@ -39,6 +39,5 @@ git push -f $githubUrl master:gh-pages # 推送到github gh-pages分支
 # git add -A
 # git commit -m "${msg}"
 # git push -f $codingUrl master # 推送到coding
-
 cd -
 rm -rf docs/.vuepress/dist
