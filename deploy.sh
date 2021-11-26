@@ -12,15 +12,16 @@ cd docs/.vuepress/dist
 # deploy to github pages
 # echo '.xugaoyi.com' > CNAME
 
-if [ -z "$GITHUB_TOKEN" ]; then
-  msg='deploy'
-  githubUrl=git@github.com:zhf883680/JiangSuTest.git
-else
-  msg='来自github actions的自动部署'
-  githubUrl=https://zhf883680:${GITHUB_TOKEN}@github.com/zhf883680/JiangSuTest.git
-  git config --global user.name "zhoufeng"
-  git config --global user.email "zhf883680@gmail.com"
-fi
+# if [ -z "$GITHUB_TOKEN" ]; then
+#   msg='deploy'
+#   githubUrl=git@github.com:zhf883680/JiangSuTest.git
+# else
+#   msg='来自github actions的自动部署'
+#   githubUrl=https://zhf883680:${GITHUB_TOKEN}@github.com/zhf883680/JiangSuTest.git
+#   git config --global user.name "zhoufeng"
+#   git config --global user.email "zhf883680@gmail.com"
+# fi
+githubUrl=https://github.com/zhf883680/JiangSuTest.git
 git init
 git add -A
 git commit -m "${msg}"
