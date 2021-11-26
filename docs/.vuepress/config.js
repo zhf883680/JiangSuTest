@@ -3,6 +3,7 @@ const base = require('../../base.js');
 const htmlModules = require('./config/htmlModules.js');
 
 module.exports = {
+  dest:"zhf883680",
   title: "江苏公考笔记",
   description: '一个基于VuePress的 江苏公考笔记',
   base, // '/<仓库名>/'， 默认'/'
