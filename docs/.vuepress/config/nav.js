@@ -14,7 +14,7 @@ module.exports = [
       { text: '考点', link: '/pages/84736f/' },
       { text: '阅读理解', link: '/pages/51dfee/' },
       { text: '词句表达', link: '/pages/5e32a7/' },
-      { text: '逻辑填空', link: '/pages/a205c3/' },
+      { text: '逻辑填空', link: '/pages/c50225/' },
     ]
   }
 ]
